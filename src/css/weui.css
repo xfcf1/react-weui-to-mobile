@@ -306,14 +306,24 @@ input.weui_btn_mini {
     background-color: #039702;
 }
 .weui_btn_warn {
-  background-color: #f6383a;
+  background-color: #FFBE00;
 }
 .weui_btn_warn:not(.weui_btn_disabled):visited {
   color: #FFFFFF;
 }
 .weui_btn_warn:not(.weui_btn_disabled):active {
   color: rgba(255, 255, 255, 0.4);
-  background-color: #cb3535;
+  background-color: #dda000;
+}
+.weui_btn_danger {
+    background-color: #f6383a;
+}
+.weui_btn_danger:not(.weui_btn_disabled):visited {
+    color: #FFFFFF;
+}
+.weui_btn_danger:not(.weui_btn_disabled):active {
+    color: rgba(255, 255, 255, 0.4);
+    background-color: #cb3535;
 }
 .weui_btn_disabled {
   color: rgba(255, 255, 255, 0.6);
@@ -349,6 +359,38 @@ input.weui_btn_plain_success {
     border-color: #039702;
 }
 .weui_btn_plain_success:after {
+    border-width: 0;
+}
+
+.weui_btn_plain_warn {
+    color: #FFBE00;
+    border: 1px solid #FFBE00;
+}
+button.weui_btn_plain_warn,
+input.weui_btn_plain_warn {
+    border-width: 1px;
+    background-color: transparent;
+}
+.weui_btn_plain_warn:active {
+    border-color: #dda000;
+}
+.weui_btn_plain_warn:after {
+    border-width: 0;
+}
+
+.weui_btn_plain_danger {
+    color: #f6383a;
+    border: 1px solid #f6383a;
+}
+button.weui_btn_plain_danger,
+input.weui_btn_plain_danger {
+    border-width: 1px;
+    background-color: transparent;
+}
+.weui_btn_plain_danger:active {
+    border-color: #cb3535;
+}
+.weui_btn_plain_danger:after {
     border-width: 0;
 }
 .weui_btn_plain_default {
@@ -1052,6 +1094,15 @@ input.weui_btn_plain_default {
   width: 0;
   height: 100%;
   background-color: #0894ec;
+}
+.weui_progress_inner_bar.success {
+    background-color: #09BB07;
+}
+.weui_progress_inner_bar.warn {
+    background-color: #FFBE00;
+}
+.weui_progress_inner_bar.danger {
+     background-color: #E64340;
 }
 .weui_progress_opr {
   display: block;
@@ -1957,6 +2008,7 @@ a.weui_media_box:active {
       -ms-flex: auto;
           flex: auto;
   background-color: #EFEFF4;
+  border-radius: 3px;
 }
 .weui_search_outer:after {
   content: '';
@@ -2034,7 +2086,7 @@ a.weui_media_box:active {
   display: none;
   margin-left: 10px;
   line-height: 28px;
-  color: #09BB07;
+  color: #0894ec;
 }
 .weui_search_input:not(:valid) ~ .weui_icon_clear {
   display: none;

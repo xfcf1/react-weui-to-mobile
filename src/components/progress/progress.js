@@ -29,18 +29,24 @@ class Progress extends React.Component {
 
     render() {
 
-        let {value, ...others} = this.props;
+        let {value, type, className, ...others} = this.props;
         if (value < 0) {
             value = 0;
         }
         if (value > 100) {
             value = 100;
         }
+        const cls = classNames({
+            success: type === 'success',
+            warn:  type === 'warn',
+            danger:  type === 'danger',
+            [className]: className
+        });
 
         return (
             <div className="weui_progress">
                 <div className="weui_progress_bar">
-                    <div className="weui_progress_inner_bar" style={{width: `${value}%`}}></div>
+                    <div className={"weui_progress_inner_bar " + cls} style={{width: `${value}%`}}></div>
                 </div>
                 {
                     this._renderOpr()

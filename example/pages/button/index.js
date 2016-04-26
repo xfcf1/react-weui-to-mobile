@@ -23,6 +23,9 @@ export default class ButtonDemo extends React.Component {
                 <Button type="warn">按钮</Button>
                 <Button type="warn" disabled>按钮</Button>
 
+                <Button type="danger">按钮</Button>
+                <Button type="danger" disabled>按钮</Button>
+
                 <Button type="default">按钮</Button>
                 <Button type="default" disabled>按钮</Button>
 
@@ -30,11 +33,13 @@ export default class ButtonDemo extends React.Component {
                     <Button type="primary" plain>按钮</Button>
                     <Button type="success" plain>按钮</Button>
                     <Button type="warn" plain>按钮</Button>
+                    <Button type="danger" plain>按钮</Button>
                     <Button type="default" plain>按钮</Button>
 
                     <Button size="small">按钮</Button>
                     <Button type="success" size="small">按钮</Button>
                     <Button type="warn" size="small">按钮</Button>
+                    <Button type="danger" size="small">按钮</Button>
                     <Button type="default" size="small">按钮</Button>
                 </div>
             </Page>

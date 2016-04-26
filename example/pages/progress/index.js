@@ -45,6 +45,9 @@ export default class ProgressDemo extends React.Component {
         return (
             <Page className="progress" title="Progress" spacing>
                 <Progress value={this.state.value} onClick={this.pause.bind(this)} />
+                <Progress type="success" value={this.state.value} onClick={this.pause.bind(this)} />
+                <Progress type="warn" value={this.state.value} onClick={this.pause.bind(this)} />
+                <Progress type="danger" value={this.state.value} onClick={this.pause.bind(this)} />
                 <br/>
                 <Button onClick={this.start.bind(this)} disabled={this.state.isUploading}>上传</Button>
             </Page>
