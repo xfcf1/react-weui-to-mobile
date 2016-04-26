@@ -19,7 +19,7 @@ export default class Nav2Demo extends React.Component {
 
     render() {
         return (
-            <Nav type="button">
+            <Nav>
                 <Button className="left" type="primary" plain size="small">按钮</Button>
                 <Button className="right" type="primary" plain size="small">按钮</Button>
                 <h1 className="title">标题</h1>

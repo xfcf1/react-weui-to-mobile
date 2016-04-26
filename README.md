@@ -69,3 +69,29 @@ import { Icon } from 'react-weui-to-mobile';
 -
 ###导航
 
+```js
+import { Nav } from 'react-weui-to-mobile';
+
+<Nav><h1 className="title">标题</h1></Nav>
+```
+
+```js
+import { Nav } from 'react-weui-to-mobile';
+
+<Nav type="button">
+    <Button className="left" type="primary" plain size="small">按钮</Button>
+    <Button className="right" type="primary" plain size="small">按钮</Button>
+    <h1 className="title">标题</h1>
+</Nav>
+```
+
+```js
+import { Nav } from 'react-weui-to-mobile';
+
+
+<Nav>
+    <a className="left" href="#tab"><Icon type="icon" value="left"/>返回</a>
+    <a className="right" href="#tab">刷新<Icon type="icon" value="refresh"/></a>
+    <h1 className="title">标题</h1>
+</Nav>
+```

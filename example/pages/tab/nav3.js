@@ -19,7 +19,7 @@ export default class Nav2Demo extends React.Component {
 
     render() {
         return (
-            <Nav type="button">
+            <Nav>
                 <a className="left" href="#tab"><Icon type="icon" value="left"/>返回</a>
                 <a className="right" href="#tab">刷新<Icon type="icon" value="refresh"/></a>
                 <h1 className="title">标题</h1>
