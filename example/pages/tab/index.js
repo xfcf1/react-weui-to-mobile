@@ -29,7 +29,7 @@ export default class TabDemo extends React.Component {
                     </Cell>
                     <Cell href="#navbar2">
                         <CellBody>
-                            navbar2
+                            navbar tab自动生成
                         </CellBody>
                         <CellFooter/>
                     </Cell>
@@ -41,7 +41,31 @@ export default class TabDemo extends React.Component {
                     </Cell>
                     <Cell href="#tabbar2">
                          <CellBody>
-                            tabbar2
+                            tabbar tab自动生成
+                        </CellBody>
+                        <CellFooter/>
+                    </Cell>
+                    <Cell href="#nav1">
+                        <CellBody>
+                            普通标题
+                        </CellBody>
+                        <CellFooter/>
+                    </Cell>
+                    <Cell href="#nav2">
+                        <CellBody>
+                            带button的标题
+                        </CellBody>
+                        <CellFooter/>
+                    </Cell>
+                    <Cell href="#nav3">
+                        <CellBody>
+                            带链接的标题
+                        </CellBody>
+                        <CellFooter/>
+                    </Cell>
+                    <Cell href="#nav4">
+                        <CellBody>
+                            button组标题
                         </CellBody>
                         <CellFooter/>
                     </Cell>

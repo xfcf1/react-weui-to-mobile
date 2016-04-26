@@ -9,8 +9,6 @@ import ReactDOM from 'react-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { Router, Route, IndexRoute} from 'react-router';
 import WeUI from '../src/index';
-import 'weui-to-mobile';
-
 import Home from './pages/home/index';
 import Button from './pages/button/index';
 import Cell from './pages/cell/index';
@@ -27,6 +25,10 @@ import NavBar from './pages/tab/navbar';
 import NavBar2 from './pages/tab/navbar_auto';
 import TabBar from './pages/tab/tabbar';
 import TabBar2 from './pages/tab/tabbar_auto';
+import Nav1 from './pages/tab/nav1';
+import Nav2 from './pages/tab/nav2';
+import Nav3 from './pages/tab/nav3';
+import Nav4 from './pages/tab/nav4';
 import SearchBar from './pages/searchbar/index';
 
 class App extends React.Component {
@@ -66,6 +68,10 @@ ReactDOM.render((
                     <Route path="navbar2" component={NavBar2}/>
                     <Route path="tabbar" component={TabBar}/>
                     <Route path="tabbar2" component={TabBar2}/>
+                    <Route path="nav1" component={Nav1}/>
+                    <Route path="nav2" component={Nav2}/>
+                    <Route path="nav3" component={Nav3}/>
+                    <Route path="nav4" component={Nav4}/>
                     <Route path="searchbar" component={SearchBar}/>
             </Route>
     </Router>

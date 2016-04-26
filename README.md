@@ -1,99 +1,71 @@
-#修改版************
-WeUI 为微信Web服务量身设计  [![Build Status](https://travis-ci.org/weui/react-weui.svg?branch=master)](https://travis-ci.org/weui/react-weui) [![npm version](https://img.shields.io/npm/v/react-weui.svg)](https://www.npmjs.org/package/react-weui) [![Coverage Status](https://coveralls.io/repos/github/weui/react-weui/badge.svg?branch=master)](https://coveralls.io/github/weui/react-weui?branch=master)
-====
+# WeUI 修改版
+<li>修改样式为IPhone(sui mobile的样式)
+<li>添加导航插件
+<li>添加手机相关[Icon](http://m.sui.taobao.org/components/#icons)
 
 
-### WeUI
-
-WeUI是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信 Web 开发量身设计，可以令用户的使用感知更加统一。包含`button`、`cell`、`dialog`、 `progress`、`toast`、`article`、`icon`等各式组件。
+# API参见
 
 [https://github.com/weui/weui](https://github.com/weui/weui)
 
-### React-WeUI
+# 样式参见
+[http://m.sui.taobao.org/components/](http://m.sui.taobao.org/components/)
 
-使用`react`的方式来构建界面
-
-### 目录结构
-
+#安装
+```sh
+npm i -save react-weui-to-mobile
 ```
-react-weui
-├── README.md
-├── docs                    # 文档说明
-├── example                 # 示例代码
-├── package.json            # package.json
-├── src                     # react-weui组件源码
-├── test                    # 测试文件
-└── webpack.config.js       # webpack配置文件
-```
+已把样式引入，不需要再引入 ```weui.css```
 
-### 安装
+#自开发
 
-```
-npm install weui react-weui --save
-```
-
-### 使用
-
-```javascript
-// app.js
-
-import React from 'react';
-import ReactDOM from 'react-dom';
-import WeUI from 'react-weui';
-import 'weui';
-
-const {Button} = WeUI;
-
-class App extends React.Component {
-    render() {
-        return (
-            <Button>hello wechat</Button>
-        );
-    }
-}
-
-ReactDOM.render((
-    <App/>
-), document.getElementById('container'));
-
-```
-
-### 开发
-
-```
-git clone https://github.com/weui/react-weui
-cd react-weui
+```sh
 npm install
 npm start
 ```
+启动端口为8000
 
+```sh
+npm build
+```
+src为插件目录
+example为例子目录
+编译插件输出目录为./lib
 
-### 文档
+#使用
+```js
+import weui from 'react-weui-to-mobile';
+```
 
-- [快速上手](./docs/installation.md)
-- [ActionSheet](./docs/actionsheet.md)
-- [Button](./docs/button.md)
-- [Cell](./docs/cell.md)
-- [Dialog](./docs/dialog.md)
-- [Form](./docs/form.md)
-- [Icon](./docs/icon.md)
-- [Mask](./docs/mask.md)
-- [Msg](./docs/msg.md)
-- [Progress](./docs/progress.md)
-- [Toast](./docs/toast.md)
+api使用方法参见原weui使用方法，这里只写明修改过的api
 
-### 体验
+-
+###Icon
+原用法
 
-![react-weui](./docs/qrcode.png)
+```js
+import { Icon } from 'react-weui-to-mobile';
+...
+<Icon value='success'>
+...
+```
+添加type属性为新加的icon
 
-[https://weui.github.io/react-weui](https://weui.github.io/react-weui)
+例如sui上的icon class为
 
-### License
+```html
+<span class="icon icon-app"></span>
+```
 
-The MIT License([http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
- 
-请自由地享受和参与开源
+只需要取icon-app后面的 ```app```部分
 
-### 贡献
+```js
+import { Icon } from 'react-weui-to-mobile';
+...
+<Icon type='icon' value='app'>
+...
+```
 
-如果你有好的意见或建议，欢迎给我们提 issue 或 pull request，为提升微信 web 体验贡献力量
+-
+###导航
+

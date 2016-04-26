@@ -47,6 +47,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.join(__dirname, 'example/index.html')
         }),
-        new OpenBrowserPlugin({ url: 'http://localhost:8080' })
+        new OpenBrowserPlugin({ url: 'http://localhost:8000' })
     ]
 };
