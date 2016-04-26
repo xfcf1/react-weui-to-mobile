@@ -28,7 +28,6 @@ import TabBar2 from './pages/tab/tabbar_auto';
 import Nav1 from './pages/tab/nav1';
 import Nav2 from './pages/tab/nav2';
 import Nav3 from './pages/tab/nav3';
-import Nav4 from './pages/tab/nav4';
 import SearchBar from './pages/searchbar/index';
 
 class App extends React.Component {
@@ -71,7 +70,6 @@ ReactDOM.render((
                     <Route path="nav1" component={Nav1}/>
                     <Route path="nav2" component={Nav2}/>
                     <Route path="nav3" component={Nav3}/>
-                    <Route path="nav4" component={Nav4}/>
                     <Route path="searchbar" component={SearchBar}/>
             </Route>
     </Router>

@@ -63,12 +63,6 @@ export default class TabDemo extends React.Component {
                         </CellBody>
                         <CellFooter/>
                     </Cell>
-                    <Cell href="#nav4">
-                        <CellBody>
-                            button组标题
-                        </CellBody>
-                        <CellFooter/>
-                    </Cell>
                 </Cells>
             </Page>
         );

@@ -18,6 +18,7 @@ import {Grids, Grid, GridIcon, GridLabel} from './components/grid/index';
 import {Panel, PanelHeader, PanelBody, PanelFooter} from './components/panel/index';
 import {MediaBox, MediaBoxHeader, MediaBoxBody, MediaBoxTitle, MediaBoxDescription, MediaBoxInfo, MediaBoxInfoMeta} from './components/mediabox/index';
 import {Tab, TabBody, TabBodyItem, NavBar, NavBarItem, TabBar, TabBarItem, TabBarIcon, TabBarLabel} from './components/tab/index';
+import {Nav} from './components/nav/index';
 import SearchBar from './components/searchbar/index';
 import './css/weui.css';
 
@@ -73,5 +74,6 @@ export default {
     TabBarIcon,
     TabBarItem,
     TabBarLabel,
-    SearchBar
+    SearchBar,
+    Nav
 };
