@@ -96,4 +96,4 @@ import { Nav } from 'react-weui-to-mobile';
 </Nav>
 ```
 ###样式查看
-[qrcode](https://github.com/xfcf1/react-weui-to-mobile/blob/master/docs/qrcode.png)
+![qrcode](https://raw.githubusercontent.com/xfcf1/react-weui-to-mobile/master/docs/qrcode.png)
