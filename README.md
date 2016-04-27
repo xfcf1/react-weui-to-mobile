@@ -95,3 +95,5 @@ import { Nav } from 'react-weui-to-mobile';
     <h1 className="title">标题</h1>
 </Nav>
 ```
+###样式查看
+[qrcode](https://github.com/xfcf1/react-weui-to-mobile/blob/master/docs/qrcode.png)
