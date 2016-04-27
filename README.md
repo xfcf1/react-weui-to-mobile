@@ -3,6 +3,8 @@
 <li>添加导航插件
 <li>添加手机相关[Icon](http://m.sui.taobao.org/components/#icons)
 
+###样式查看扫码
+![qrcode](https://raw.githubusercontent.com/xfcf1/react-weui-to-mobile/master/docs/qrcode.png)
 
 # API参见
 
@@ -95,5 +97,3 @@ import { Nav } from 'react-weui-to-mobile';
     <h1 className="title">标题</h1>
 </Nav>
 ```
-###样式查看
-![qrcode](https://raw.githubusercontent.com/xfcf1/react-weui-to-mobile/master/docs/qrcode.png)
