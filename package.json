@@ -1,6 +1,6 @@
 {
   "name": "react-weui-to-mobile",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "weui for react",
   "main": "./lib",
   "scripts": {
