@@ -1,6 +1,6 @@
 {
   "name": "react-weui-to-mobile",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "weui for react",
   "main": "./lib",
   "scripts": {
@@ -31,8 +31,7 @@
   },
   "homepage": "https://github.com/xfcf1/react-weui-to-mobile",
   "dependencies": {
-    "classnames": "^2.2.0",
-    "react": "^0.14.2"
+    "classnames": "^2.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.5",
@@ -58,6 +57,7 @@
     "postcss-loader": "^0.8.2",
     "react-addons-css-transition-group": "^0.14.7",
     "react-addons-test-utils": "^0.14.3",
+    "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "react-router": "^1.0.2",
     "rimraf": "^2.4.3",
