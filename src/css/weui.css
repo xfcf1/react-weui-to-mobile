@@ -2231,12 +2231,13 @@ input[type="search"]::-webkit-search-results-decoration {
     right: 0;
     left: 0;
     z-index: 10;
-    height: 4.2rem;
+    height: 2.8rem;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     background-color: #fff;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    font-size: 1rem;
 }
 .bar:after {
     content: '';
@@ -2270,23 +2271,19 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .bar_nav .left {
     position: absolute;
-    left: 1rem;
-    top: 1.2rem;
+    left: 0.5rem;
+    top: 0.5rem;
     z-index: 1;
 }
 .bar_nav .right {
     position: absolute;
-    right: 1rem;
-    top: 1.2rem;
+    right: 0.5rem;
+    top: 0.5rem;
     margin-top: 0;
     z-index: 1;
 }
 .bar_nav a {
     color: #0894ec;
-}
-.bar_nav [class*=weui_icon_],
-.bar_nav [class^=weui_icon_] {
-    font-size: 1.25rem;
 }
 .bar_nav .left [class*=weui_icon_],
 .bar_nav .left [class^=weui_icon_] {
@@ -2302,9 +2299,9 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 100%;
     padding: 0;
     margin: 0 -0.5rem;
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 4.2rem;
+    line-height: 2.8rem;
     color: #3d4145;
     text-align: center;
     white-space: nowrap;
