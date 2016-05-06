@@ -2285,6 +2285,14 @@ input[type="search"]::-webkit-search-results-decoration {
 .bar_nav a {
     color: #0894ec;
 }
+.bar_nav a.left,
+.bar_nav a.right {
+    top: 0.6rem;
+}
+.bar_nav button.left,
+.bar_nav button.right {
+    top: 0.5rem;
+}
 .bar_nav .left [class*=weui_icon_],
 .bar_nav .left [class^=weui_icon_] {
     margin-right: 5px;
