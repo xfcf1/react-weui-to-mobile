@@ -8,7 +8,7 @@
 
 # API参见
 
-[https://github.com/weui/weui](https://github.com/weui/weui)
+[https://github.com/xfcf1/react-weui-to-mobile/tree/master/docs](https://github.com/xfcf1/react-weui-to-mobile/tree/master/docs)
 
 # 样式参见
 [http://m.sui.taobao.org/components/](http://m.sui.taobao.org/components/)
