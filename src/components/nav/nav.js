@@ -25,7 +25,7 @@ export default class Tab extends React.Component {
     };
 
     render() {
-        const {children, className, type, ...others} = this.props;
+        const {children, className, type, defaultIndex} = this.props;
         const cls = classNames({
             bar: true,
             bar_nav: true
@@ -34,7 +34,7 @@ export default class Tab extends React.Component {
         switch(type){
             case 'button':
                 return (
-                    <header className={cls} {...others}>
+                    <header className={cls} data-index={defaultIndex}>
                         {children}
                     </header>
                 );
@@ -45,7 +45,7 @@ export default class Tab extends React.Component {
                 break;
             default:
                 return (
-                    <header className={cls} {...others}>
+                    <header className={cls} data-index={defaultIndex}}>
                         {children}
                     </header>
                 );
